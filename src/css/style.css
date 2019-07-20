@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+header nav {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  padding: 20px 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00838f;
+  z-index: 9999;
+}
+
+header nav .logo h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+header nav ul li a {
+  padding-right: 40px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 40px 0;
+  width: 100%;
+  height: auto;
+}
+
+/* ABOUT SECTION */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+}
+
+section .container .img-container {
+  width: 35%;
+  min-width: 600px;
+  height: auto;
+}
+
+.container .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .info-container {
+  width: fit-content;
+  height: auto;
+  padding: 0 60px 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.container .info-container .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+}
+
+.container .info-container .text-wrapper h2 {
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.info-container .button-wrapper {
+  padding-top: 80px;
+}
+
+button {
+  padding: 20px 60px;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+  border: 2px solid #00838f;
+  text-transform: uppercase;
+  color: #00838f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: ease 0.3s;
+}
+
+button:hover {
+  background: #00838f;
+  color: #fff;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.portfolio {
+  background: #dfeef8;
+  min-height: 50vh;
+}
+
+.portfolio h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.portfolio .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2em;
+}
+
+.portfolio .flex-container .item {
+  height: 490px;
+  width: 510px;
+  background: white;
+  margin: 10px 0 0 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolio .flex-container .item img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.portfolio .flex-container .item img:hover {
+  width: 110%;
+  height: 110%;
+
+  transition: 0.4s;
+}
+.contact .contact-belt {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contact-belt .form-left {
+  background-image: url("../img/builder.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 500px;
+  min-height: 330px;
+  align-self: center;
+  margin: 2em;
+}
+
+footer {
+  background: #263238;
+  height: 300px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+footer .footer-left {
+  width: auto;
+  height: auto;
+}
+
+footer .footer-left h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+footer .footer-left p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer .footer-right {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+footer .footer-right .icon {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+
+  .container .info-container {
+    width: 600px;
+    padding: 0;
+  }
+  .container .info-container .button-wrapper {
+    padding-top: 40px;
+  }
+  .services .container {
+    flex-direction: column-reverse !important;
+  }
+  .contact-belt {
+    flex-wrap: wrap;
+  }
+  .contact-belt .form-left {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav ul {
+    display: none;
+  }
+  section .container .img-container {
+    min-width: 300px;
+    width: 100%;
+  }
+  .container .info-container {
+    width: auto;
+    padding: 10px;
+  }
+  .portfolio .flex-container .item {
+    width: 300px;
+    height: 290px;
+  }
+  footer {
+    justify-content: center;
+  }
+
+  footer .footer-left {
+    text-align: center;
+  }
+}
