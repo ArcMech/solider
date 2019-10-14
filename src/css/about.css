@@ -1,0 +1,128 @@
+/* SECTIONS */
+
+section {
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+}
+
+/* ABOUT SECTION */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+}
+
+section .container .img-container {
+  width: 35%;
+  min-width: 600px;
+  height: auto;
+}
+
+.container .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .info-container {
+  width: fit-content;
+  height: auto;
+  padding: 0 60px 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.container .info-container .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+}
+
+.container .info-container .text-wrapper h2 {
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.info-container .button-wrapper {
+  padding-top: 80px;
+}
+
+button {
+  padding: 20px 60px;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+  border: 2px solid #00838f;
+  text-transform: uppercase;
+  color: #00838f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: ease 0.3s;
+}
+
+button:hover {
+  background: #00838f;
+  color: #fff;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+
+  .container .info-container {
+    width: 600px;
+    padding: 0;
+  }
+  .container .info-container .button-wrapper {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+
+  .container .info-container {
+    width: 600px;
+    padding: 0;
+  }
+  .container .info-container .button-wrapper {
+    padding-top: 40px;
+  }
+  .services .container {
+    flex-direction: column-reverse !important;
+  }
+  .contact-belt {
+    flex-wrap: wrap;
+  }
+  .contact-belt .form-left {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  section .container .img-container {
+    min-width: 300px;
+    width: 100%;
+  }
+  .container .info-container {
+    width: auto;
+    padding: 10px;
+  }
+}

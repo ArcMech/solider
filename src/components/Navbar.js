@@ -3,12 +3,34 @@ import React from "react";
 import "../css/navbar.css";
 const Navbar = props => {
   return (
-    <nav className="navbar d-flex justify-content-end">
-      <a href="#">O firmie</a>
-      <a href="#">Usługi</a>
-      <a href="#">Nasze prace</a>
-      <a href="#">Kontakt</a>
-    </nav>
+    <header>
+      <nav>
+        <div className="logo">
+          <a>Solider</a>
+        </div>
+        <ul className="menu">
+          <li>
+            <a href="#">O nas</a>
+          </li>
+          <li>
+            <a href="#">Usługi</a>
+          </li>
+          <li>
+            <a href="#">Porfolio</a>
+          </li>
+          <li>
+            <a href="#" className="contact-link">
+              Kontakt
+            </a>
+          </li>
+        </ul>
+        <div className="menu-icon">
+          <span />
+          <span />
+          <span />
+        </div>
+      </nav>
+    </header>
   );
 };
 
